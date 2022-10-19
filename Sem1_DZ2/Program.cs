@@ -21,6 +21,11 @@ if (numberC > max)
     max = numberC;
 }
 
+if (numberA == numberB && numberB == numberC)
+{
+    Console.WriteLine($"All numbers are equal");
+
+}
 else
 {
     Console.WriteLine($" Maximum value is {max}");
