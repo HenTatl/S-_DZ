@@ -3,7 +3,7 @@
 // которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа. 
 
 Console.Write(" Enter natural 3-digit number: ");
-int number = int.Parse(Console.ReadLine());
+int number = Convert.ToInt32(Console.ReadLine());
 
 int SecondDig(int num)
 {
