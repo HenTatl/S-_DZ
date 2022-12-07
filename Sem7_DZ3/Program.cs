@@ -5,17 +5,17 @@
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
-void Zadacha052()
+void AverageArithmetic()
 {
-    Console.WriteLine("Введите количество строк:");
+    Console.Write("Введите количество строк :  ");
     int n = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("Введите количество столбцов:");
+    Console.Write("Введите количество столбцов :  ");
     int m = Convert.ToInt32(Console.ReadLine());
     int[,] numbers = new int[n, m];
     FillArray(numbers);
     Console.WriteLine();
     PrintArray(numbers);
-    Console.WriteLine("Среднее арифметическое каждого столбца:");
+    Console.WriteLine("Среднее арифметическое элементов каждого из столбцов :");
     for (int j = 0; j < numbers.GetLength(1); j++)
     {
         double average = 0;
@@ -28,7 +28,7 @@ void Zadacha052()
     }
 }
 
-Zadacha052();
+AverageArithmetic();
 
 void FillArray(int[,] numbers)
 {
